@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chalet te koop | Autrans-Méaudre en Vercors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <header class="menu">
+
+        <div class="logo">
+            CHALET VERCORS
+            <span>Autrans-Méaudre en Vercors</span>
+        </div>
+
+        <nav>
+            <a href="#woning">De woning</a>
+            <a href="#fotos">Foto's</a>
+            <a href="#omgeving">Omgeving</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="menu-prijs">
+           Op aanvraag
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         VASTE HOOFDFOTO
+    ========================== -->
+
+    <section class="hero">
+
+        <img
+            src="afbeeldingen/huis.jpg"
+            alt="Chalet in Autrans-Méaudre en Vercors"
+        >
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="label">TE KOOP</p>
+
+            <h1>
+                Een bijzonder chalet
+                <br>
+                in de Vercors
+            </h1>
+
+            <p class="plaats">
+                Autrans-Méaudre en Vercors
+            </p>
+
+            
+            <a href="#fotos" class="button">
+                Bekijk de foto's
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         KENMERKEN
+    ========================== -->
+
+    <section class="highlights">
+
+        <div>
+            <strong>1.300 m²</strong>
+            <span>Perceel</span>
+        </div>
+
+        <div>
+            <strong>2</strong>
+            <span>Parkeerplaatsen</span>
+        </div>
+
+        <div>
+            <strong>3</strong>
+            <span>Slaapkamers</span>
+        </div>
+
+        <div>
+            <strong>Zuid</strong>
+            <span>Ligging terras</span>
+        </div>
+
+        <div>
+            <strong>☀</strong>
+            <span>Zonnepanelen</span>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOTO'S VAN HET CHALET
+    ========================== -->
+
+    <section id="fotos" class="photo-section">
+
+        <div class="photo-title">
+
+            <p class="small-title">
+                IMPRESSIE
+            </p>
+
+            <h2>
+                Foto's van het chalet
+            </h2>
+
+        </div>
+
+
+        <!-- Grote foto -->
+
+        <div class="photo-viewer">
+
+            <button
+                class="photo-arrow left"
+                onclick="changePhoto(-1)"
+                aria-label="Vorige foto">
+                &#10094;
+            </button>
+
+
+            <img
+                id="mainPhoto"
+                src="afbeeldingen/huis.jpg"
+                alt="Foto van het chalet"
+            >
+
+
+            <button
+                class="photo-arrow right"
+                onclick="changePhoto(1)"
+                aria-label="Volgende foto">
+                &#10095;
+            </button>
+
+        </div>
+
+
+        <!-- Fototeller -->
+
+        <div class="photo-info">
+            <span id="photoNumber">1</span> / 20
+        </div>
+
+
+        <!-- Miniaturen -->
+
+        <div class="thumbnails">
+
+            <img
+                src="afbeeldingen/huis.jpg"
+                alt="Chalet"
+                onclick="showPhoto(0)"
+                class="thumbnail active-thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/huis2.JPG"
+                alt="Chalet"
+                onclick="showPhoto(1)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Huis3.jpg"
+                alt="Chalet"
+                onclick="showPhoto(2)"
+                class="thumbnail"
+            >
+             <img
+                src="afbeeldingen/Terras1.JPG"
+                alt="Terras"
+                onclick="showPhoto(3)"
+                class="thumbnail"
+            >
+             <img
+                src="afbeeldingen/Terras3.jpg"
+                alt="Terras"
+                onclick="showPhoto(4)"
+                class="thumbnail"
+            >   
+
+             <img
+                src="afbeeldingen/Terras2.jpg"
+                alt="Terras"
+                onclick="showPhoto(5)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/eethoek3.JPG"
+                alt="Eethoek"
+                onclick="showPhoto(7)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/woonkamer.JPG"
+                alt="Woonkamer"
+                onclick="showPhoto(8)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/badkamer1a.JPG"
+                alt="Badkamer"
+                onclick="showPhoto(9)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/badkamer1b.JPG"
+                alt="Badkamer"
+                onclick="showPhoto(10)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Slaapkamer1.JPG"
+                alt="Slaapkamer"
+                onclick="showPhoto(11)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Slaapkamer1b.JPG"
+                alt="Slaapkamer"
+                onclick="showPhoto(12)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/slaapkamer2.JPG"
+                alt="Slaapkamer"
+                onclick="showPhoto(13)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/slaapkamer3.JPG"
+                alt="Slaapkamer"
+                onclick="showPhoto(14)"
+                class="thumbnail"
+            >
+
+           
+
+            <img
+                src="afbeeldingen/Uitzicht.jpg"
+                alt="Uitzicht"
+                onclick="showPhoto(15)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Hiver1.jpg"
+                alt="Hiver"
+                onclick="showPhoto(16)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Hiver5.jpg"
+                alt="Hiver"
+                onclick="showPhoto(17)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Hiver3.jpg"
+                alt="Hiver"
+                onclick="showPhoto(18)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Vergezichtbergen1.jpg"
+                alt="Hiver"
+                onclick="showPhoto(19)"
+                class="thumbnail"
+            >
+
+            <img
+                src="afbeeldingen/Vergezichtbergen2.jpg"
+                alt="Hiver"
+                onclick="showPhoto(20)"
+                class="thumbnail"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WELKOM
+    ========================== -->
+
+    <section id="woning" class="content intro-section">
+
+        <div class="intro-text">
+
+            <p class="small-title">
+                HET CHALET
+            </p>
+
+            <h2>
+                Welkom bij dit sfeervolle chalet
+            </h2>
+
+            <p>
+                Een heerlijke plek voor eigen gebruik, maar dankzij
+                de ligging en de vele recreatiemogelijkheden ook
+                bijzonder interessant als vakantiewoning voor verhuur.
+            </p>
+
+            <p>
+                De woning beschikt over meerdere slaapkamers, een
+                ruime woonkamer met open haard, een open keuken,
+                een riante badkamer, een groot terras op het zuiden
+                met buitenhaard en een ruime tuin rondom het chalet.
+            </p>
+
+            <a href="#contact" class="button">
+                Meer over de woning
+            </a>
+
+        </div>
+
+
+        <div class="informatie-box">
+
+            <div>
+                <strong>GENIET HET HELE JAAR DOOR</strong>
+
+                <p>
+                    In de winter skiën en langlaufen, in de zomer
+                    wandelen, mountainbiken en canyoning.
+                </p>
+            </div>
+
+
+            <div>
+                <strong>IDEALE LIGGING</strong>
+
+                <p>
+                    Gelegen op het zuiden met vrij uitzicht en
+                    volop zon op het grote terras.
+                </p>
+            </div>
+
+
+            <div>
+                <strong>UITSTEKEND VOOR VERHUUR</strong>
+
+                <p>
+                    Een aantrekkelijke bestemming voor gezinnen
+                    en sportievelingen.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ENTREE
+    ========================== -->
+
+    <section class="content two-columns">
+
+        <div>
+
+            <p class="small-title">
+                ENTREE
+            </p>
+
+            <h2>
+                Ruimte vanaf het moment dat u binnenkomt
+            </h2>
+
+            <p>
+                Bij binnenkomst komt u in de hal met garderobe en
+                toegang tot de parkeergarage met ruimte voor twee
+                auto's.
+            </p>
+
+            <p>
+                Daarnaast bevindt zich hier de ruime bijkeuken met
+                toegang tot de tuin. Deze ruimte kan worden gebruikt
+                als opslag of tuinkamer, of eventueel voor het
+                realiseren van een extra slaapkamer met
+                douchegelegenheid.
+            </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+            <span>PARKEERGARAGE</span>
+
+            <strong>2 auto's</strong>
+
+            <small>
+                Ruime parkeergelegenheid
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         WOONKAMER
+    ========================== -->
+
+    <section class="content two-columns reverse">
+
+        <div>
+
+            <p class="small-title">
+                DE WOONKAMER
+            </p>
+
+            <h2>
+                Een royale leefruimte met open haard
+            </h2>
+
+            <p>
+                Op de eerste verdieping treft u de ruime woonkamer
+                met een mooie open haard en de eetkamer met open
+                keuken.
+            </p>
+
+            <p>
+                Vanuit de woonkamer is er via diverse openslaande
+                deuren toegang tot een groot terras met grote
+                buitenhaard.
+            </p>
+
+            <p>
+                Door de ligging op het zuiden en het vrije uitzicht
+                kunt u hier de gehele dag heerlijk van de zon genieten
+                en gezellig samen barbecueën.
+            </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+            <span>TERRAS</span>
+
+            <strong>Zuidgericht</strong>
+
+            <small>
+                Vrij uitzicht & buitenhaard
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TWEEDE VERDIEPING
+    ========================== -->
+
+    <section class="content">
+
+        <p class="small-title">
+            TWEEDE VERDIEPING
+        </p>
+
+        <h2>
+            Comfortabel slapen en ontspannen
+        </h2>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Twee ruime slaapkamers
+                </h3>
+
+                <p>
+                    Op de tweede verdieping bevinden zich twee
+                    ruime slaapkamers.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Riante badkamer
+                </h3>
+
+                <p>
+                    Een ruime badkamer met regendouche en toilet.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Airconditioning
+                </h3>
+
+                <p>
+                    Eén van de slaapkamers beschikt over
+                    airconditioning.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>
+                    Zonnepanelen
+                </h3>
+
+                <p>
+                    De airconditioning wordt ondersteund door
+                    zonnepanelen op het dak.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         TUIN
+    ========================== -->
+
+    <section class="content two-columns">
+
+        <div>
+
+            <p class="small-title">
+                DE TUIN
+            </p>
+
+            <h2>
+                Genieten van het buitenleven
+            </h2>
+
+            <p>
+                De woning beschikt over een ruime tuin rondom het
+                chalet op een perceel van circa 1.300 m².
+            </p>
+
+            <p>
+                Aan de zijkant van het huis bevindt zich een pergola
+                met een loungezit. Samen met het grote terras en de
+                buitenhaard vormt dit een heerlijke buitenruimte.
+            </p>
+
+        </div>
+
+
+        <div class="tuin-box">
+
+            <strong>
+                1.300 m²
+            </strong>
+
+            <span>
+                Ruim perceel
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OMGEVING
+    ========================== -->
+
+    <section id="omgeving" class="omgeving">
+
+        <div class="omgeving-content">
+
+            <p class="small-title">
+                DE OMGEVING
+            </p>
+
+            <h2>
+                Autrans-Méaudre<br>
+                en Vercors
+            </h2>
+
+            <p>
+                Autrans-Méaudre en Vercors is een charmant skidorp
+                met traditionele architectuur en een goed bewaard
+                gebleven omgeving.
+            </p>
+
+            <p>
+                Het dorp biedt tal van recreatiemogelijkheden en
+                evenementen, het hele jaar door. De omgeving spreekt
+                zowel gezinnen als sportievelingen aan.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACTIVITEITEN
+    ========================== -->
+
+    <section class="content">
+
+        <p class="small-title">
+            HET HELE JAAR DOOR
+        </p>
+
+        <h2>
+            Van wintersport tot zomeravontuur
+        </h2>
+
+
+        <div class="activiteiten">
+
+            <div>
+
+                <span class="icoon">❄</span>
+
+                <h3>
+                    Winter
+                </h3>
+
+                <p>
+                    Skiën en circa 180 km aan langlaufloipes voor
+                    klassieke stijl en skating.
+                </p>
+                <a href="afbeeldingen/Ski-afbeelding.jpg" target="_blank">
+                <img src="afbeeldingen/Ski-afbeelding.jpg" alt="Winter in de Vercors">
+            </a>
+            </div>
+
+
+            <div>
+
+                <span class="icoon">☀</span>
+
+                <h3>
+                    Zomer
+                </h3>
+
+                <p>
+                    Wandelen, mountainbiken, canyoning en andere
+                    buitenactiviteiten in het Vercors-massief.
+                </p>
+                	<a href="afbeeldingen/Mountainbike2.jpg" target="_blank">
+                <img src="afbeeldingen/Mountainbike2.jpg" alt="Winter in de Vercors">
+            </a>
+            </div>
+
+
+            <div>
+
+                <span class="icoon">♥</span>
+
+                <h3>
+                    Vakantie & verhuur
+                </h3>
+
+                <p>
+                    Een heerlijke plek voor eigen gebruik en
+                    interessant voor verhuur.
+                </p>
+                <a href="afbeeldingen/meer.jpg" target="_blank">
+                <img src="afbeeldingen/meer.jpg" alt="Winter in de Vercors">
+            </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="contact">
+
+        <div>
+
+            <p class="small-title">
+                INTERESSE?
+            </p>
+
+            <h2>
+                Misschien wordt dit<br>
+                uw volgende bestemming.
+            </h2>
+
+            <p>
+                Neem contact met ons op voor meer informatie
+                of een bezichtiging.
+            </p>
+
+            <a
+                href="mailto:jou@email.nl"
+                class="button dark">
+                Neem contact op
+            </a>
+
+        </div>
+
+
+        <div class="contact-prijs">
+
+            <span>
+                Vraagprijs
+            </span>
+
+            <strong>
+               Op aanvraag
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div>
+
+            <strong>
+                CHALET VERCORS
+            </strong>
+
+            <p>
+                Autrans-Méaudre en Vercors
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Alle rechten voorbehouden
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT FOTO'S
+    ========================== -->
+
+    <script>
+
+        const photos = [
+
+            "afbeeldingen/huis.jpg",
+            "afbeeldingen/huis2.JPG",
+            "afbeeldingen/huis3.JPG",
+            "afbeeldingen/Terras1.JPG",
+            "afbeeldingen/Terras2.JPG",
+            "afbeeldingen/Terras3.JPG",
+            "afbeeldingen/eethoek3.JPG",
+            "afbeeldingen/woonkamer.JPG",
+            "afbeeldingen/badkamer1a.JPG",
+            "afbeeldingen/badkamer1b.JPG",
+            "afbeeldingen/Slaapkamer1.JPG",
+            "afbeeldingen/Slaapkamer1b.JPG",
+            "afbeeldingen/slaapkamer2.JPG",
+            "afbeeldingen/slaapkamer3.JPG",
+            "afbeeldingen/Terras1.JPG",
+            "afbeeldingen/Uitzicht.jpg",
+            "afbeeldingen/Hiver1.jpg",
+            "afbeeldingen/Hiver5.jpg",
+            "afbeeldingen/Hiver3.jpg",
+            "afbeeldingen/Vergezichtbergen1.jpg",
+            "afbeeldingen/Vergezichtbergen2.jpg",
+
+        ];
+
+
+        let currentPhoto = 0;
+
+
+        function showPhoto(number) {
+
+            currentPhoto = number;
+
+            document.getElementById("mainPhoto").src =
+                photos[currentPhoto];
+
+            document.getElementById("photoNumber").textContent =
+                currentPhoto + 1;
+
+
+            const thumbnails =
+                document.querySelectorAll(".thumbnail");
+
+
+            thumbnails.forEach(function(thumbnail) {
+
+                thumbnail.classList.remove(
+                    "active-thumbnail"
+                );
+
+            });
+
+
+            thumbnails[currentPhoto].classList.add(
+                "active-thumbnail"
+            );
+
+        }
+
+
+        function changePhoto(direction) {
+
+            currentPhoto += direction;
+
+
+            if (currentPhoto >= photos.length) {
+                currentPhoto = 0;
+            }
+
+
+            if (currentPhoto < 0) {
+                currentPhoto = photos.length - 1;
+            }
+
+
+            showPhoto(currentPhoto);
+
+        }
+
+
+        /* Met toetsenbord door foto's bladeren */
+
+        document.addEventListener(
+            "keydown",
+            function(event) {
+
+                if (event.key === "ArrowLeft") {
+                    changePhoto(-1);
+                }
+
+                if (event.key === "ArrowRight") {
+                    changePhoto(1);
+                }
+
+            }
+        );
+
+    </script>
+
+
+</body>
+</html>

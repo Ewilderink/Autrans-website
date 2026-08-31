@@ -1,0 +1,1176 @@
+/* =========================
+   BASIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #292824;
+
+    background: #f8f6f2;
+
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+    height: 94px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 6%;
+
+    position: relative;
+
+    z-index: 20;
+
+    box-shadow:
+        0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.logo {
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    color: #604936;
+
+    line-height: 1.1;
+}
+
+
+.logo span {
+    display: block;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 1px;
+
+    color: #555;
+
+    margin-top: 4px;
+}
+
+
+nav a {
+    color: #292824;
+
+    text-decoration: none;
+
+    margin-left: 30px;
+
+    font-size: 14px;
+}
+
+
+nav a:hover {
+    color: #92734e;
+}
+
+
+.menu-prijs {
+    background: #8b6844;
+
+    color: white;
+
+    padding: 13px 25px;
+
+    font-weight: bold;
+
+    border-radius: 2px;
+}
+
+
+/* =========================
+   VASTE HOOFDFOTO
+========================= */
+
+.hero {
+    position: relative;
+
+    height: 620px;
+
+    overflow: hidden;
+}
+
+
+.hero > img {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+.hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.62),
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.05)
+        );
+}
+
+
+.hero-content {
+    position: absolute;
+
+    left: 8%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    max-width: 650px;
+
+    text-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.45);
+}
+
+
+.label {
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    font-weight: bold;
+}
+
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: 57px;
+
+    line-height: 1.1;
+
+    font-weight: normal;
+
+    margin: 12px 0 20px;
+}
+
+
+.plaats {
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+}
+
+
+.prijs {
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin: 18px 0 25px;
+}
+
+
+/* =========================
+   KNOPPEN
+========================= */
+
+.button {
+    display: inline-block;
+
+    background: #a17b50;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    font-weight: bold;
+
+    border-radius: 2px;
+
+    transition: 0.2s;
+}
+
+
+.button:hover {
+    background: #80603c;
+
+    transform: translateY(-2px);
+}
+
+
+.button.dark {
+    background: #292824;
+}
+
+
+/* =========================
+   KENMERKEN
+========================= */
+
+.highlights {
+    background: white;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    padding: 25px 7%;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.08);
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.highlights div {
+    text-align: center;
+
+    border-right:
+        1px solid #ddd;
+
+    padding: 5px 15px;
+}
+
+
+.highlights div:last-child {
+    border-right: none;
+}
+
+
+.highlights strong {
+    display: block;
+
+    font-size: 21px;
+
+    font-family: Georgia, serif;
+}
+
+
+.highlights span {
+    display: block;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   FOTO SECTIE
+========================= */
+
+.photo-section {
+    background: white;
+
+    padding:
+        75px 5% 90px;
+}
+
+
+.photo-title {
+    max-width: 1120px;
+
+    margin: 0 auto 25px;
+}
+
+
+.small-title {
+    color: #98744c;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.photo-title h2 {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: normal;
+
+    margin: 0;
+}
+
+
+.photo-title h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+
+    height: 3px;
+
+    background: #a17b50;
+
+    margin-top: 12px;
+}
+
+
+/* =========================
+   GROTE FOTO
+========================= */
+
+.photo-viewer {
+    max-width: 1120px;
+
+    height: 570px;
+
+    margin: auto;
+
+    position: relative;
+
+    background: #eee;
+
+    overflow: hidden;
+
+    border-radius: 3px;
+}
+
+
+.photo-viewer > img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   FOTO PIJLTJES
+========================= */
+
+.photo-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #292824;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    box-shadow:
+        0 3px 15px rgba(0, 0, 0, 0.18);
+
+    transition: 0.2s;
+}
+
+
+.photo-arrow:hover {
+    transform:
+        translateY(-50%)
+        scale(1.08);
+}
+
+
+.photo-arrow.left {
+    left: 18px;
+}
+
+
+.photo-arrow.right {
+    right: 18px;
+}
+
+
+/* =========================
+   FOTO TELLER
+========================= */
+
+.photo-info {
+    max-width: 1120px;
+
+    margin: 10px auto;
+
+    text-align: right;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   THUMBNAILS
+========================= */
+
+.thumbnails {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding-bottom: 8px;
+}
+
+
+.thumbnail {
+    width: 115px;
+
+    height: 80px;
+
+    object-fit: cover;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    border:
+        3px solid transparent;
+
+    border-radius: 3px;
+
+    opacity: 0.72;
+
+    transition: 0.2s;
+}
+
+
+.thumbnail:hover {
+    opacity: 1;
+
+    transform: translateY(-2px);
+}
+
+
+.active-thumbnail {
+    border-color: #a17b50;
+
+    opacity: 1;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+    max-width: 1050px;
+
+    margin: 90px auto;
+
+    padding: 0 30px;
+}
+
+
+.content h2 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    font-weight: normal;
+}
+
+
+.content p:not(.small-title) {
+    color: #555;
+}
+
+
+/* =========================
+   INTRODUCTIE
+========================= */
+
+.intro-section {
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.intro-text > p {
+    margin-bottom: 25px;
+}
+
+
+.informatie-box {
+    background: #f0ece6;
+
+    padding: 30px;
+}
+
+
+.informatie-box > div {
+    margin-bottom: 22px;
+}
+
+
+.informatie-box > div:last-child {
+    margin-bottom: 0;
+}
+
+
+.informatie-box strong {
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    font-weight: normal;
+}
+
+
+.informatie-box p {
+    font-size: 14px;
+
+    margin: 5px 0 0;
+}
+
+
+/* =========================
+   TWEE KOLOMMEN
+========================= */
+
+.two-columns {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+
+.reverse {
+    direction: rtl;
+}
+
+
+.reverse > * {
+    direction: ltr;
+}
+
+
+/* =========================
+   FEATURE BOX
+========================= */
+
+.feature-box {
+    min-height: 330px;
+
+    background: #e5dfd5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.feature-box span {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+}
+
+
+.feature-box strong {
+    font-family: Georgia, serif;
+
+    font-size: 43px;
+
+    font-weight: normal;
+
+    margin: 8px 0;
+}
+
+
+.feature-box small {
+    color: #666;
+}
+
+
+/* =========================
+   KAARTEN
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.card {
+    background: white;
+
+    border:
+        1px solid #e3dfd8;
+
+    padding: 28px;
+}
+
+
+.card h3 {
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+    font-weight: normal;
+}
+
+
+.card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   TUIN
+========================= */
+
+.tuin-box {
+    min-height: 330px;
+
+    background: #dfe2d8;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+.tuin-box strong {
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    font-weight: normal;
+}
+
+
+.tuin-box span {
+    color: #666;
+}
+
+
+/* =========================
+   OMGEVING
+========================= */
+
+.omgeving {
+    min-height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(35, 40, 35, 0.62),
+            rgba(35, 40, 35, 0.62)
+        ),
+        url("afbeeldingen/Uitzicht.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+}
+
+
+.omgeving-content {
+    max-width: 1050px;
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+
+.omgeving h2 {
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    line-height: 1.15;
+
+    font-weight: normal;
+}
+
+
+.omgeving p:not(.small-title) {
+    max-width: 650px;
+
+    color: white;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   ACTIVITEITEN
+========================= */
+
+.activiteiten {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.activiteiten > div {
+    background: white;
+
+    padding: 30px;
+}
+
+
+.activiteiten h3 {
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: normal;
+}
+
+
+.activiteiten p {
+    margin-bottom: 0;
+}
+
+
+.icoon {
+    font-size: 27px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background:
+        linear-gradient(
+            rgba(40, 45, 40, 0.62),
+            rgba(40, 45, 40, 0.62)
+        ),
+        url("afbeeldingen/Uitzicht.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.contact h2 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    font-weight: normal;
+}
+
+
+.contact p:not(.small-title) {
+    color: white;
+
+    font-size: 17px;
+}
+
+
+.contact-prijs {
+    text-align: right;
+}
+
+
+.contact-prijs span {
+    display: block;
+}
+
+
+.contact-prijs strong {
+    display: block;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #292824;
+
+    color: white;
+
+    padding: 35px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+footer strong {
+    letter-spacing: 3px;
+}
+
+
+footer p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin: 4px 0;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu {
+        height: auto;
+
+        padding: 18px 25px;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+
+    nav {
+        order: 3;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    nav a {
+        margin: 0 10px;
+    }
+
+
+    .hero {
+        height: 570px;
+    }
+
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .highlights {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+
+    .two-columns,
+    .intro-section {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .reverse {
+        direction: ltr;
+    }
+
+
+    .activiteiten {
+        grid-template-columns: 1fr;
+    }
+
+
+    .photo-viewer {
+        height: 480px;
+    }
+
+}
+
+
+/* =========================
+   TELEFOON
+========================= */
+
+@media (max-width: 600px) {
+
+    .menu {
+        padding: 15px;
+    }
+
+
+    .logo {
+        font-size: 18px;
+    }
+
+
+    .menu-prijs {
+        padding: 9px 13px;
+
+        font-size: 13px;
+    }
+
+
+    nav a {
+        font-size: 12px;
+
+        margin: 0 5px;
+    }
+
+
+    .hero {
+        height: 510px;
+    }
+
+
+    .hero-content {
+        left: 25px;
+
+        right: 25px;
+    }
+
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+
+    .plaats {
+        font-size: 17px;
+    }
+
+
+    .prijs {
+        font-size: 27px;
+    }
+
+
+    .highlights {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        padding: 15px;
+    }
+
+
+    .highlights div {
+        border-right: none;
+
+        border-bottom:
+            1px solid #ddd;
+    }
+
+
+    .photo-section {
+        padding:
+            55px 15px 60px;
+    }
+
+
+    .photo-title h2 {
+        font-size: 32px;
+    }
+
+
+    .photo-viewer {
+        height: 330px;
+    }
+
+
+    .photo-arrow {
+        width: 42px;
+
+        height: 42px;
+
+        font-size: 20px;
+    }
+
+
+    .photo-arrow.left {
+        left: 10px;
+    }
+
+
+    .photo-arrow.right {
+        right: 10px;
+    }
+
+
+    .thumbnail {
+        width: 95px;
+
+        height: 65px;
+    }
+
+
+    .content {
+        margin: 65px auto;
+
+        padding: 0 20px;
+    }
+
+
+    .content h2 {
+        font-size: 32px;
+    }
+
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .omgeving h2 {
+        font-size: 38px;
+    }
+
+
+    .contact {
+        padding: 60px 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .contact-prijs {
+        text-align: left;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}
